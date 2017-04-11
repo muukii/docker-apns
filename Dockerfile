@@ -7,5 +7,5 @@ RUN apt-get -q install -y jq
 RUN gem install houston
 COPY ./script.sh /usr/local/bin/script.sh
 
-ENTRYPOINT ["sh /usr/local/bin/script.sh"]
+ENTRYPOINT ["sh", "/usr/local/bin/script.sh"]
 
